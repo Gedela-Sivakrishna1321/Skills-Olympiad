@@ -15,9 +15,9 @@ const ProcessStep = ({ icon, step, title, description, color }) => (
       <div className={`absolute inset-0 ${color}/10 rounded-xl transform -rotate-6 group-hover:rotate-0 transition-transform`}></div>
       <div className="relative bg-white p-8 rounded-xl shadow-lg group-hover:shadow-xl transition-all">
         <div className="mb-4">{icon}</div>
-        <div className={`absolute -top-4 -right-4 w-8 h-8 ${color} text-white rounded-full flex items-center justify-center font-bold`}>
+        {/* <div className={`absolute -top-4 -right-4 w-8 h-8 ${color} text-white rounded-full flex items-center justify-center font-bold`}>
           {step}
-        </div>
+        </div> */}
         <h3 className="text-xl font-bold text-gray-900 mb-2">{title}</h3>
         <p className="text-gray-600">{description}</p>
       </div>
@@ -101,7 +101,7 @@ export default function Process() {
         <div className="grid md:grid-cols-2 gap-8 mb-16">
           <StageDetail
             icon={<Trophy className="w-10 h-10 text-blue-600" />}
-            title="Stage 1: Registration"
+            title="Step 1: Registration"
             description="Begin your journey by registering for the Skill Olympiad. Choose between online and offline exam formats based on your preference and location."
             requirements={[
               "Valid ID proof",
@@ -112,7 +112,7 @@ export default function Process() {
           />
           <StageDetail
             icon={<Users className="w-10 h-10 text-emerald-600" />}
-            title="Stage 2: Initial Assessment"
+            title="Step 2: Initial Assessment"
             description="Participate in our comprehensive foundational exam to demonstrate your theoretical knowledge and basic understanding."
             requirements={[
               "Minimum 60% score required",
@@ -123,24 +123,29 @@ export default function Process() {
           />
           <StageDetail
             icon={<Medal className="w-10 h-10 text-orange-600" />}
-            title="Stage 3: Practical Exam"
+            title="Step 3: Practical Exam"
             description="Show your practical skills through hands-on challenges designed to test real-world application of your knowledge."
             requirements={[
               "Follow safety protocols",
               "Complete tasks within timeframe",
+              "Participant have to attend 5 days skill training",
               "Demonstrate proper technique",
               "Meet quality standards"
             ]}
           />
           <StageDetail
             icon={<Sparkles className="w-10 h-10 text-purple-600" />}
-            title="Stage 4: Awards & Recognition"
+            title="Step 4: Awards & Recognition"
             description="Top performers receive recognition through various rewards and opportunities for further growth."
             requirements={[
+              "First winner will get 10,000",
+              "Second winner will get 7,500",
+              "Third winner will get 5,000",
               "Industry-recognized certification",
               "Monetary prizes",
               "Skill development discounts",
-              "Networking opportunities"
+              "Networking opportunities",
+              "They will get scholarship in the skill courses"
             ]}
           />
         </div>

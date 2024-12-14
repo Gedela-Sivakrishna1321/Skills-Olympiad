@@ -58,16 +58,16 @@ export default function Hero() {
             />
             <StatCard
               icon={<Users className="w-8 h-8 text-yellow-400" />}
-              title="10K+"
+              title="5K+"
               description="Participants"
             />
             <StatCard
               icon={<Award className="w-8 h-8 text-yellow-400" />}
-              title="100+"
+              title="50+"
               description="Industry Partners"
             />
             <StatCard
-              title="₹5L+"
+              title="₹2L+"
               description="Prize Pool"
               icon={<Star className="w-8 h-8 text-yellow-400" />}
             />

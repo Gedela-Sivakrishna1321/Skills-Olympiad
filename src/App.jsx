@@ -6,6 +6,7 @@ import Team from './components/Team';
 import Facilities from './components/Facilities';
 import Eligibility from './components/Eligibility';
 import Registration from './components/Registration';
+import Courses from './components/Courses';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Team />
       <Facilities />
       <Registration/>
+      <Courses/>
     </div>
   );
 }

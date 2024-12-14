@@ -81,7 +81,7 @@ const FAQ = () => {
   const faqs = [
     {
       question: 'What are the registration fees?',
-      answer: 'Registration fees vary by level: Level 1: ₹500, Level 2: ₹750, Level 3: ₹1000, Level 4: ₹1200'
+      answer: 'Early bird offer ₹100 upto December 2024 after that price will be ₹500'
     },
     {
       question: 'What documents are required?',
@@ -136,10 +136,7 @@ export default function Registration() {
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 gap-12">
-          <div>
-            <RegistrationForm />
-          </div>
+        <div className=" max-w-2xl mx-auto space-y-10">
           <div className="space-y-8">
             <div className="bg-blue-600 text-white rounded-xl p-6">
               <div className="flex items-center mb-4">
@@ -162,6 +159,12 @@ export default function Registration() {
               </ul>
             </div>
             <FAQ />
+          </div>
+          
+          <div className="mx-auto w-full flex justify-center">
+          <button className="max-w-fit  px-8 py-3 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-700 transition-all duration-300 hover:shadow-lg transform hover:-translate-y-0.5">
+            Apply Now
+          </button>
           </div>
         </div>
       </div>

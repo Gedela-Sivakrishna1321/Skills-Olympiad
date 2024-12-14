@@ -38,6 +38,7 @@ export default function Navbar() {
             <NavLink href="#team">Team & Partners</NavLink>
             <NavLink href="#facilities">Facilities</NavLink>
             <NavLink href="#eligibility">Eligibility</NavLink>
+            <NavLink href="#courses">Skill Courses</NavLink>
             {/* <NavLink href="#registration">Register</NavLink>
             <NavLink href="#resources">Resources</NavLink> */}
             <NavLink href="#registration">
@@ -63,12 +64,14 @@ export default function Navbar() {
       {/* Mobile Menu */}
       {isOpen && (
         <div className="md:hidden">
-          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t">
+          <div  onClick={() => setIsOpen(!isOpen)}
+           className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t">
             <MobileNavLink href="#home">Home</MobileNavLink>
             <MobileNavLink href="#process">How It Works</MobileNavLink>
             <MobileNavLink href="#team">Team & Partners</MobileNavLink>
             <MobileNavLink href="#facilities">Facilities</MobileNavLink>
             <MobileNavLink href="#eligibility">Eligibility</MobileNavLink>
+            <MobileNavLink href="#courses">Skill Courses</MobileNavLink>
             <MobileNavLink href="#registration">
             <button className="w-full text-center bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition-colors">
               Register Now
