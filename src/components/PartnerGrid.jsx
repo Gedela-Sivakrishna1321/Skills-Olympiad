@@ -3,49 +3,49 @@ import React from 'react';
 const partners = [
   { 
     name: 'EICHER', 
-    logo: 'https://res.cloudinary.com/dheuqshro/image/upload/v1731665693/Skills%20Olympiad/Industry%20Partners/EICHER_pca4te.png'
+    logo: 'https://res.cloudinary.com/dxorxllhb/image/upload/v1734331445/EICHER_pca4te_lsnxby.png'
   },
   { 
     name: 'RSB', 
-    logo: 'https://res.cloudinary.com/dheuqshro/image/upload/v1731665691/Skills%20Olympiad/Industry%20Partners/RSB-logo_hfikrm.png',
+    logo: 'https://res.cloudinary.com/dxorxllhb/image/upload/v1734331452/RSB-logo_hfikrm_nminay.png',
     tagline: 'Where Dreams are Responsibilities'
   },
   { 
     name: 'ALIMCO', 
-    logo: 'https://res.cloudinary.com/dheuqshro/image/upload/v1731665692/Skills%20Olympiad/Industry%20Partners/ALIMCO_hzjuo5.jpg'
+    logo: 'https://res.cloudinary.com/dxorxllhb/image/upload/v1734331437/ALIMCO_hzjuo5_mwap9t.jpg'
   },
   { 
     name: 'BASUDHA', 
-    logo: 'https://res.cloudinary.com/dheuqshro/image/upload/v1731665692/Skills%20Olympiad/Industry%20Partners/BASUDHA_tqj04v.png',
+    logo: 'https://res.cloudinary.com/dxorxllhb/image/upload/v1734331439/BASUDHA_tqj04v_buhw1r.png',
     tagline: 'Drinking Water for All'
   },
   { 
     name: 'TATA TECHNOLOGIES', 
-    logo: 'https://res.cloudinary.com/dheuqshro/image/upload/v1731665691/Skills%20Olympiad/Industry%20Partners/TATA-TECHNOLOGIES-logo_gcsfnh.png'
+    logo: 'https://res.cloudinary.com/dxorxllhb/image/upload/v1734331455/TATA-TECHNOLOGIES-logo_gcsfnh_tduxr6.png'
   },
   { 
     name: 'TATA STRIVE', 
-    logo: 'https://res.cloudinary.com/dheuqshro/image/upload/v1731665692/Skills%20Olympiad/Industry%20Partners/TATA-STRIVE_obetyc.png'
+    logo: 'https://res.cloudinary.com/dxorxllhb/image/upload/v1734331454/TATA-STRIVE_obetyc_czzv9o.png'
   },
   { 
     name: 'GENERAL AERONAUTICS', 
-    logo: 'https://res.cloudinary.com/dheuqshro/image/upload/v1731665692/Skills%20Olympiad/Industry%20Partners/General_Aurenautics_nmepv3.png'
+    logo: 'https://res.cloudinary.com/dxorxllhb/image/upload/v1734331444/General_Aurenautics_nmepv3_fwtwqd.png'
   },
   { 
     name: 'OMFED', 
-    logo: 'https://res.cloudinary.com/dheuqshro/image/upload/v1731665691/Skills%20Olympiad/Industry%20Partners/OMFED_rkke5g.png'
+    logo: 'https://res.cloudinary.com/dxorxllhb/image/upload/v1734331450/OMFED_rkke5g_v2wwdj.png'
   },
   { 
     name: 'CTTC BHUBANESWAR', 
-    logo: 'https://res.cloudinary.com/dheuqshro/image/upload/v1731665692/Skills%20Olympiad/Industry%20Partners/CTTC_pvm7hq.png'
+    logo: 'https://res.cloudinary.com/dxorxllhb/image/upload/v1734331441/CTTC_pvm7hq_htod8f.png'
   },
   { 
     name: 'ISRO', 
-    logo: 'https://res.cloudinary.com/dheuqshro/image/upload/v1731665691/Skills%20Olympiad/Industry%20Partners/ISRO_qkprx2.png'
+    logo: 'https://res.cloudinary.com/dxorxllhb/image/upload/v1734331448/ISRO_qkprx2_odroic.png'
   },
   { 
     name: 'HINDUSTAN AERONAUTICS LIMITED', 
-    logo: 'https://res.cloudinary.com/dheuqshro/image/upload/v1731665692/Skills%20Olympiad/Industry%20Partners/Hindustan_Aeuronautics_xao5vb.png'
+    logo: 'https://res.cloudinary.com/dxorxllhb/image/upload/v1734331447/Hindustan_Aeuronautics_xao5vb_dftqcx.png'
   },
 ];
 

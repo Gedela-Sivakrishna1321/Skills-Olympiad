@@ -8,8 +8,8 @@ const facilities = [
     icon: <Wrench className="w-6 h-6" />,
     description: 'Our state-of-the-art wood engineering lab is equipped with precision tools and machines, enabling participants to demonstrate their carpentry and woodworking expertise in a professional environment.',
     images: [
-      'https://res.cloudinary.com/dheuqshro/image/upload/v1731672010/Skills%20Olympiad/Facilities/WOOD_LAB_1_ifn3fg.png',
-      'https://res.cloudinary.com/dheuqshro/image/upload/v1731672035/Skills%20Olympiad/Facilities/WOOD_LAB_2_uh2vwb.png'
+      'https://res.cloudinary.com/dxorxllhb/image/upload/v1734331509/WOOD_LAB_1_ringrf.png',
+      'https://res.cloudinary.com/dxorxllhb/image/upload/v1734331504/WOOD_LAB_2_uh2vwb_nfq2xc.png'
     ]
   },
   {
@@ -17,7 +17,7 @@ const facilities = [
     icon: <Scissors className="w-6 h-6" />,
     description: 'The apparel lab provides a comprehensive setup for designing, cutting, and stitching, perfect for evaluating skills in fashion and garment manufacturing.',
     images: [
-      'https://res.cloudinary.com/dheuqshro/image/upload/v1731672010/Skills%20Olympiad/Facilities/APPAREL_1_vwv2qj.png'
+      'https://res.cloudinary.com/dxorxllhb/image/upload/v1734331460/APPAREL_1_vwv2qj_k6t7e6.png'
     ]
   },
   {
@@ -25,8 +25,8 @@ const facilities = [
     icon: <Car className="w-6 h-6" />,
     description: 'A modern automotive facility designed to test participants\' skills in vehicle repair, diagnostics, and assembly with cutting-edge tools and real-world scenarios.',
     images: [
-      'https://res.cloudinary.com/dheuqshro/image/upload/v1731672012/Skills%20Olympiad/Facilities/AUTOMOTIVE_1_dqyehw.png',
-      'https://res.cloudinary.com/dheuqshro/image/upload/v1731672012/Skills%20Olympiad/Facilities/AUTOMOTIVE_2_a1lhmh.png'
+      'https://res.cloudinary.com/dxorxllhb/image/upload/v1734331464/AUTOMOTIVE_1_isoyjy.png',
+      'https://res.cloudinary.com/dxorxllhb/image/upload/v1734331467/AUTOMOTIVE_2_a1lhmh_m5qmfk.png'
     ]
   },
   {
@@ -34,7 +34,7 @@ const facilities = [
     icon: <Monitor className="w-6 h-6" />,
     description: 'Fully equipped IT labs with the latest software and systems for testing proficiency in programming, networking, and other digital skills.',
     images: [
-      'https://res.cloudinary.com/dheuqshro/image/upload/v1731672012/Skills%20Olympiad/Facilities/IT_1_rwxqiw.png'
+      'https://res.cloudinary.com/dxorxllhb/image/upload/v1734331483/IT_1_gasqpx.png'
     ]
   },
   {
@@ -42,8 +42,8 @@ const facilities = [
     icon: <Hotel className="w-6 h-6" />,
     description: 'Simulated hospitality and tourism environments that allow participants to showcase their skills in customer service, management, and event planning.',
     images: [
-      'https://res.cloudinary.com/dheuqshro/image/upload/v1731672013/Skills%20Olympiad/Facilities/TOURISM_1_q1tm1s.png',
-      'https://res.cloudinary.com/dheuqshro/image/upload/v1731672013/Skills%20Olympiad/Facilities/TOURISM_2_hd2dhe.png'
+      'https://res.cloudinary.com/dxorxllhb/image/upload/v1734331490/TOURISM_1_uqvkje.png',
+      'https://res.cloudinary.com/dxorxllhb/image/upload/v1734331492/TOURISM_2_rqsj7l.png'
     ]
   },
   {
@@ -51,8 +51,8 @@ const facilities = [
     icon: <Droplet className="w-6 h-6" />,
     description: 'Advanced plumbing workstations where participants can demonstrate practical expertise in installations, maintenance, and troubleshooting.',
     images: [
-      'https://res.cloudinary.com/dheuqshro/image/upload/v1731672013/Skills%20Olympiad/Facilities/PLUMBING_1_lcbb3v.png',
-      'https://res.cloudinary.com/dheuqshro/image/upload/v1731672014/Skills%20Olympiad/Facilities/PLUMBING_2_mqojzn.png'
+      'https://res.cloudinary.com/dxorxllhb/image/upload/v1734331490/PLUMBING_1_lcbb3v_shczml.png',
+      'https://res.cloudinary.com/dxorxllhb/image/upload/v1734331488/PLUMBING_2_mqojzn_jqhlfm.png'
     ]
   },
   {
@@ -60,8 +60,8 @@ const facilities = [
     icon: <Flame className="w-6 h-6" />,
     description: 'A dedicated welding facility with modern equipment, designed for testing precision, safety, and craftsmanship in welding tasks.',
     images: [
-      'https://res.cloudinary.com/dheuqshro/image/upload/v1731672015/Skills%20Olympiad/Facilities/WELDING_1_f5inkq.png',
-      'https://res.cloudinary.com/dheuqshro/image/upload/v1731672010/Skills%20Olympiad/Facilities/WELDING_2_nekexe.png'
+      'https://res.cloudinary.com/dxorxllhb/image/upload/v1734331498/WELDING_1_f5inkq_keyco9.png',
+      'https://res.cloudinary.com/dxorxllhb/image/upload/v1734331499/WELDING_2_nekexe_rxe7og.png'
     ]
   },
   {
@@ -69,7 +69,7 @@ const facilities = [
     icon: <Sparkles className="w-6 h-6" />,
     description: 'A professional setup for evaluating skills in beauty therapy, hairdressing, and wellness practices in a real-world setting.',
     images: [
-      'https://res.cloudinary.com/dheuqshro/image/upload/v1731672012/Skills%20Olympiad/Facilities/BEAUTIY_oubyh7.png'
+      'https://res.cloudinary.com/dxorxllhb/image/upload/v1734331471/BEAUTIY_oubyh7_hfvrrh.png'
     ]
   },
   {
@@ -77,9 +77,9 @@ const facilities = [
     icon: <Building className="w-6 h-6" />,
     description: 'Comprehensive construction labs equipped to test skills in masonry, structural work, and project execution with real materials and tools.',
     images: [
-      'https://res.cloudinary.com/dheuqshro/image/upload/v1731672013/Skills%20Olympiad/Facilities/CONSTRUCTION_1_msh4il.png',
-      'https://res.cloudinary.com/dheuqshro/image/upload/v1731672010/Skills%20Olympiad/Facilities/CONSTRUCTION_2_owmuib.png',
-      'https://res.cloudinary.com/dheuqshro/image/upload/v1731672011/Skills%20Olympiad/Facilities/CONSTRUCTION_3_a4ybse.png'
+      'https://res.cloudinary.com/dxorxllhb/image/upload/v1734331473/CONSTRUCTION_1_uiixbu.png',
+      'https://res.cloudinary.com/dxorxllhb/image/upload/v1734331474/CONSTRUCTION_2_vmhqxn.png',
+      'https://res.cloudinary.com/dxorxllhb/image/upload/v1734331476/CONSTRUCTION_3_mibmkf.png'
     ]
   }
 ];
