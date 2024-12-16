@@ -66,7 +66,7 @@ export default function Process() {
         </div>
 
         {/* Main Process Steps */}
-        <div className="grid md:grid-cols-4 gap-8 mb-24">
+        {/* <div className="grid md:grid-cols-4 gap-8 mb-24">
           <ProcessStep
             icon={<ClipboardCheck className="w-12 h-12 text-blue-600" />}
             step={1}
@@ -95,7 +95,7 @@ export default function Process() {
             description="Earn certifications, prizes, and industry recognition"
             color="bg-purple-600"
           />
-        </div>
+        </div> */}
 
         {/* Detailed Stages */}
         <div className="grid md:grid-cols-2 gap-8 mb-16">

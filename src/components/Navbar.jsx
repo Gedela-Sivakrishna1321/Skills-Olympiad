@@ -32,7 +32,7 @@ export default function Navbar() {
           </div>
           
           {/* Desktop Menu */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden lg:flex items-center space-x-8">
             <NavLink href="#home">Home</NavLink>
             <NavLink href="#process">How It Works</NavLink>
             <NavLink href="#team">Team & Partners</NavLink>
@@ -50,7 +50,7 @@ export default function Navbar() {
           </div>
 
           {/* Mobile Menu Button */}
-          <div className="md:hidden flex items-center">
+          <div className="lg:hidden flex items-center">
             <button
               onClick={() => setIsOpen(!isOpen)}
               className="text-gray-500 hover:text-gray-700"
@@ -63,7 +63,7 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden">
+        <div className="lg:hidden">
           <div  onClick={() => setIsOpen(!isOpen)}
            className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t">
             <MobileNavLink href="#home">Home</MobileNavLink>
