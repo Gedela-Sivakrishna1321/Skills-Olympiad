@@ -7,6 +7,8 @@ import Facilities from './components/Facilities';
 import Eligibility from './components/Eligibility';
 import Registration from './components/Registration';
 import Courses from './components/Courses';
+import Resources from './components/Resources';
+import Contact from './components/ContactUs';
 
 function App() {
   return (
@@ -17,8 +19,10 @@ function App() {
       <Eligibility />
       <Team />
       <Facilities />
-      <Registration/>
       <Courses/>
+      <Resources/>
+      <Contact/>
+      <Registration/>
     </div>
   );
 }

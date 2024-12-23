@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import {
   Users,
   GraduationCap,
@@ -9,26 +9,28 @@ import {
   Wrench,
   Award,
   AlertTriangle,
-  Info
-} from 'lucide-react';
+  Info,
+} from "lucide-react";
 
 const EligibilityCard = ({ icon, title, children }) => {
   const [isExpanded, setIsExpanded] = useState(false);
 
   return (
-    <div 
+    <div
       className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-all cursor-pointer group"
       onClick={() => setIsExpanded(!isExpanded)}
     >
       <div className="flex items-start space-x-4">
-        <div className="p-3 bg-blue-100 rounded-lg text-blue-600">
-          {icon}
-        </div>
+        <div className="p-3 bg-blue-100 rounded-lg text-blue-600">{icon}</div>
         <div>
           <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-blue-600 transition-colors">
             {title}
           </h3>
-          <div className={`overflow-hidden transition-all duration-300 ${isExpanded ? 'max-h-96' : 'max-h-20'}`}>
+          <div
+            className={`overflow-hidden transition-all duration-300 ${
+              isExpanded ? "max-h-96" : "max-h-20"
+            }`}
+          >
             {children}
           </div>
           {!isExpanded && (
@@ -52,11 +54,18 @@ const LevelCard = ({ level, grades, description }) => (
 
 export default function Eligibility() {
   return (
-    <section id="eligibility" className="pb-24 pt-4 bg-gradient-to-b from-blue-50 to-white">
+    <section
+      id="eligibility"
+      className="pb-24 pt-4 bg-gradient-to-b from-blue-50 to-white"
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">Eligibility & Rules</h2>
-          <p className="text-xl text-gray-600">Everything you need to know about participating</p>
+          <h2 className="text-4xl font-bold text-gray-900 mb-4">
+            Eligibility & Rules
+          </h2>
+          <p className="text-xl text-gray-600">
+            Everything you need to know about participating
+          </p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-8 mb-16">
@@ -65,21 +74,24 @@ export default function Eligibility() {
             title="Eligibility Criteria"
           >
             <div className="space-y-4">
-              <p className="text-gray-600">Open to students aged 12-20 years with interest in developing practical skills.</p>
+              <p className="text-gray-600">
+                Open to students aged 12-20 years with interest in developing
+                practical skills.
+              </p>
               <div className="grid gap-3">
                 <LevelCard
                   level="1"
-                  grades="6th to 8th grade"
+                  grades="9th & 10th"
                   description="Foundation level for young learners"
                 />
                 <LevelCard
                   level="2"
-                  grades="9th & 10th grade"
+                  grades="I.T.I, +2 & Intermediate"
                   description="Intermediate skill development"
                 />
                 <LevelCard
                   level="3"
-                  grades="10th pass, ITI, 12th, Diploma"
+                  grades="Diploma & B. Tech (Age below 20 years)"
                   description="Advanced technical training"
                 />
                 <LevelCard
@@ -164,13 +176,17 @@ export default function Eligibility() {
             title="Disqualification & Appeals"
           >
             <div className="space-y-3 text-gray-600">
-              <p className="font-semibold text-red-600">Grounds for Disqualification:</p>
+              <p className="font-semibold text-red-600">
+                Grounds for Disqualification:
+              </p>
               <ul className="space-y-1">
                 <li>• Cheating or malpractice</li>
                 <li>• Rule violations</li>
                 <li>• Misconduct</li>
               </ul>
-              <p className="font-semibold text-blue-600 mt-3">Appeals Process:</p>
+              <p className="font-semibold text-blue-600 mt-3">
+                Appeals Process:
+              </p>
               <ul className="space-y-1">
                 <li>• 48-hour submission window</li>
                 <li>• Written appeal required</li>
@@ -194,8 +210,10 @@ export default function Eligibility() {
         </div>
 
         <div className="text-center cursor-pointer">
-          <a href="#registration"
-          className="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-all transform hover:scale-105">
+          <a
+            href="#registration"
+            className="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-all transform hover:scale-105"
+          >
             Register Now
           </a>
         </div>

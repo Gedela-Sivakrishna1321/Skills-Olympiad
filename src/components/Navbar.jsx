@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Menu, X, Trophy } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
 const NavLink = ({ href, children }) => (
   <a
@@ -26,10 +27,11 @@ export default function Navbar() {
     <nav className="fixed w-full bg-white/95 backdrop-blur-sm z-50 shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
-          <div className="flex items-center">
+          <a href="#home"
+           className="flex items-center cursor-pointer">
             <Trophy className="h-8 w-8 text-blue-600" />
             <span className="ml-2 text-xl font-bold text-gray-900">Skills Olympiad</span>
-          </div>
+          </a>
           
           {/* Desktop Menu */}
           <div className="hidden lg:flex items-center space-x-8">
@@ -39,14 +41,16 @@ export default function Navbar() {
             <NavLink href="#facilities">Facilities</NavLink>
             <NavLink href="#eligibility">Eligibility</NavLink>
             <NavLink href="#courses">Skill Courses</NavLink>
+            <NavLink href="#resources">Resources</NavLink>
+            <NavLink href="#contact">Contact us</NavLink>
             {/* <NavLink href="#registration">Register</NavLink>
             <NavLink href="#resources">Resources</NavLink> */}
-            <NavLink href="#registration">
-            <button  
+            {/* <NavLink href="#registration">
+            <button  onClick={() => window.open("https://forms.gle/uQ3Pd4Yv3Yrqz6fw9", "_blank")}
              className="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition-colors">
-              Register Now
+              Apply Now
             </button>
-            </NavLink>
+            </NavLink> */}
           </div>
 
           {/* Mobile Menu Button */}
@@ -72,11 +76,14 @@ export default function Navbar() {
             <MobileNavLink href="#facilities">Facilities</MobileNavLink>
             <MobileNavLink href="#eligibility">Eligibility</MobileNavLink>
             <MobileNavLink href="#courses">Skill Courses</MobileNavLink>
-            <MobileNavLink href="#registration">
-            <button className="w-full text-center bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition-colors">
-              Register Now
+            <MobileNavLink href="#resources">Resources</MobileNavLink>
+            <MobileNavLink href="#contact">Contact us</MobileNavLink>
+            {/* <MobileNavLink href="#registration">
+            <button onClick={() => window.open("https://forms.gle/uQ3Pd4Yv3Yrqz6fw9", "_blank")}
+            className="w-full text-center bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition-colors">
+              Apply Now
             </button>
-            </MobileNavLink>
+            </MobileNavLink> */}
             {/* <MobileNavLink href="#resources">Resources</MobileNavLink> */}
           
           </div>

@@ -162,7 +162,8 @@ export default function Registration() {
           </div>
           
           <div className="mx-auto w-full flex justify-center">
-          <button className="max-w-fit  px-8 py-3 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-700 transition-all duration-300 hover:shadow-lg transform hover:-translate-y-0.5">
+          <button onClick={() => window.open("https://forms.gle/uQ3Pd4Yv3Yrqz6fw9", "_blank")}
+           className="max-w-fit  px-8 py-3 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-700 transition-all duration-300 hover:shadow-lg transform hover:-translate-y-0.5">
             Apply Now
           </button>
           </div>
