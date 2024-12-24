@@ -1,18 +1,36 @@
-import React from 'react';
-import { ClipboardCheck, Users, Trophy, Medal, CheckCircle2, Timer, Award, Sparkles, Target, Star, BookOpen } from 'lucide-react';
-import { useNavigate } from 'react-router-dom';
+import React from "react";
+import {
+  ClipboardCheck,
+  Users,
+  Trophy,
+  Medal,
+  CheckCircle2,
+  Timer,
+  Award,
+  Sparkles,
+  Target,
+  Star,
+  BookOpen,
+} from "lucide-react";
+import { useNavigate } from "react-router-dom";
+import Team from "./Team";
 
 const ProcessStep = ({ icon, step, title, description, color }) => (
   <div className="relative">
     {/* Timeline connector */}
     {step < 4 && (
       <div className="hidden md:block absolute top-24 left-1/2 w-full h-1 bg-gray-200">
-        <div className={`h-full ${color} transition-all duration-500`} style={{ width: '0%' }} />
+        <div
+          className={`h-full ${color} transition-all duration-500`}
+          style={{ width: "0%" }}
+        />
       </div>
     )}
-    
+
     <div className="relative group">
-      <div className={`absolute inset-0 ${color}/10 rounded-xl transform -rotate-6 group-hover:rotate-0 transition-transform`}></div>
+      <div
+        className={`absolute inset-0 ${color}/10 rounded-xl transform -rotate-6 group-hover:rotate-0 transition-transform`}
+      ></div>
       <div className="relative bg-white p-8 rounded-xl shadow-lg group-hover:shadow-xl transition-all">
         <div className="mb-4">{icon}</div>
         {/* <div className={`absolute -top-4 -right-4 w-8 h-8 ${color} text-white rounded-full flex items-center justify-center font-bold`}>
@@ -58,11 +76,53 @@ const ObjectiveCard = ({ icon, title, description }) => (
 export default function Process() {
   // const navigate = useNavigate();
   return (
-    <section id="process" className="py-20 bg-gradient-to-b from-white to-blue-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section
+      
+      className="py-20 bg-gradient-to-b from-white to-blue-50"
+    >
+      <div className="text-center mb-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 className="text-4xl font-bold text-gray-900 mb-4">
+          Our Objectives
+        </h2>
+        <p className="text-xl text-gray-600 mb-12">
+          Empowering students through excellence and recognition
+        </p>
+
+        <div className="grid md:grid-cols-2 gap-8">
+          <ObjectiveCard
+            icon={<Target className="w-10 h-10 text-blue-600" />}
+            title="Skill Development and Recognition"
+            description="A platform for students to showcase and enhance skills through competitive exams simulating real-world challenges."
+          />
+          <ObjectiveCard
+            icon={<Star className="w-10 h-10 text-blue-600" />}
+            title="Pathway to Excellence"
+            description="Reward students scoring above 75% in the initial exam by advancing them to the hands-on practical evaluation stage."
+          />
+          <ObjectiveCard
+            icon={<Award className="w-10 h-10 text-blue-600" />}
+            title="Industry-Standard Certification"
+            description="Recognize top performers with prestigious certifications from NSDC, universities, and industry partners, plus monetary prizes."
+          />
+          <ObjectiveCard
+            icon={<BookOpen className="w-10 h-10 text-blue-600" />}
+            title="Encouraging Competence"
+            description="Motivate students to achieve higher competency, instilling confidence and fostering lifelong learning."
+          />
+        </div>
+      </div>
+
+      <Team />
+
+      <div id="process" 
+      className="max-w-7xl mx-auto mt-24 px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">How It Works</h2>
-          <p className="text-xl text-gray-600">Your journey to excellence in four stages</p>
+          <h2 className="text-4xl font-bold text-gray-900 mb-4">
+            How It Works
+          </h2>
+          <p className="text-xl text-gray-600">
+            Your journey to excellence in four stages
+          </p>
         </div>
 
         {/* Main Process Steps */}
@@ -107,7 +167,7 @@ export default function Process() {
               "Valid ID proof",
               "Recent photograph",
               "Academic credentials",
-              "Contact information"
+              "Contact information",
             ]}
           />
           <StageDetail
@@ -118,7 +178,7 @@ export default function Process() {
               "Minimum 60% score required",
               "Time-bound assessment",
               "Multiple choice questions",
-              "Subject-specific modules"
+              "Subject-specific modules",
             ]}
           />
           <StageDetail
@@ -130,7 +190,7 @@ export default function Process() {
               "Complete tasks within timeframe",
               "Participant have to attend 5 days skill training",
               "Demonstrate proper technique",
-              "Meet quality standards"
+              "Meet quality standards",
             ]}
           />
           <StageDetail
@@ -145,46 +205,21 @@ export default function Process() {
               "Monetary prizes",
               "Skill development discounts",
               "Networking opportunities",
-              "They will get scholarship in the skill courses"
+              "They will get scholarship in the skill courses",
             ]}
           />
         </div>
 
         <div className="text-center cursor-pointer">
-          <a href="#registration"
-          className="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-all transform hover:scale-105">
+          <a
+            href="#registration"
+            className="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-all transform hover:scale-105"
+          >
             Start Your Journey Now
           </a>
         </div>
       </div>
 
-      <div className="text-center mt-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">Our Objectives</h2>
-          <p className="text-xl text-gray-600 mb-12">Empowering students through excellence and recognition</p>
-          
-          <div className="grid md:grid-cols-2 gap-8">
-            <ObjectiveCard
-              icon={<Target className="w-10 h-10 text-blue-600" />}
-              title="Skill Development and Recognition"
-              description="A platform for students to showcase and enhance skills through competitive exams simulating real-world challenges."
-            />
-            <ObjectiveCard
-              icon={<Star className="w-10 h-10 text-blue-600" />}
-              title="Pathway to Excellence"
-              description="Reward students scoring above 75% in the initial exam by advancing them to the hands-on practical evaluation stage."
-            />
-            <ObjectiveCard
-              icon={<Award className="w-10 h-10 text-blue-600" />}
-              title="Industry-Standard Certification"
-              description="Recognize top performers with prestigious certifications from NSDC, universities, and industry partners, plus monetary prizes."
-            />
-            <ObjectiveCard
-              icon={<BookOpen className="w-10 h-10 text-blue-600" />}
-              title="Encouraging Competence"
-              description="Motivate students to achieve higher competency, instilling confidence and fostering lifelong learning."
-            />
-          </div>
-        </div>
     </section>
   );
 }

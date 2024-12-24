@@ -56,7 +56,7 @@ export default function Eligibility() {
   return (
     <section
       id="eligibility"
-      className="pb-24 pt-4 bg-gradient-to-b from-blue-50 to-white"
+      className="pb-20 pt-4 bg-gradient-to-b from-blue-50 to-white"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">

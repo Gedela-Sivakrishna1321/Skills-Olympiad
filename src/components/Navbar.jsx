@@ -35,13 +35,14 @@ export default function Navbar() {
           
           {/* Desktop Menu */}
           <div className="hidden lg:flex items-center space-x-8">
-            <NavLink href="#home">Home</NavLink>
-            <NavLink href="#process">How It Works</NavLink>
+            {/* <NavLink href="#home">Home</NavLink> */}
             <NavLink href="#team">Team & Partners</NavLink>
-            <NavLink href="#facilities">Facilities</NavLink>
+            <NavLink href="#process">How It Works</NavLink>
             <NavLink href="#eligibility">Eligibility</NavLink>
+            <NavLink href="#facilities">Facilities</NavLink>
             <NavLink href="#courses">Skill Courses</NavLink>
             <NavLink href="#resources">Resources</NavLink>
+            <NavLink href="#registration">Registration</NavLink>
             <NavLink href="#contact">Contact us</NavLink>
             {/* <NavLink href="#registration">Register</NavLink>
             <NavLink href="#resources">Resources</NavLink> */}
@@ -70,13 +71,14 @@ export default function Navbar() {
         <div className="lg:hidden">
           <div  onClick={() => setIsOpen(!isOpen)}
            className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t">
-            <MobileNavLink href="#home">Home</MobileNavLink>
-            <MobileNavLink href="#process">How It Works</MobileNavLink>
+            {/* <MobileNavLink href="#home">Home</MobileNavLink> */}
             <MobileNavLink href="#team">Team & Partners</MobileNavLink>
-            <MobileNavLink href="#facilities">Facilities</MobileNavLink>
+            <MobileNavLink href="#process">How It Works</MobileNavLink>
             <MobileNavLink href="#eligibility">Eligibility</MobileNavLink>
+            <MobileNavLink href="#facilities">Facilities</MobileNavLink>
             <MobileNavLink href="#courses">Skill Courses</MobileNavLink>
             <MobileNavLink href="#resources">Resources</MobileNavLink>
+            <MobileNavLink href="#registration">Registration</MobileNavLink>
             <MobileNavLink href="#contact">Contact us</MobileNavLink>
             {/* <MobileNavLink href="#registration">
             <button onClick={() => window.open("https://forms.gle/uQ3Pd4Yv3Yrqz6fw9", "_blank")}
